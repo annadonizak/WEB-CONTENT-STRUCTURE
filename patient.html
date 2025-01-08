@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Data Form</title>
+</head>
+<body>
+    <h1>Patient Data Form</h1>
+
+    <form action="/submit_patient_data" method="POST">
+        <!-- Date of Birth -->
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required><br><br>
+
+        <!-- Place of Birth -->
+        <label for="placeOfBirth">Place of Birth:</label>
+        <input type="text" id="placeOfBirth" name="placeOfBirth" required><br><br>
+
+        <!-- Illnesses (Checkboxes) -->
+        <label for="illnesses">Illnesses:</label><br>
+        <input type="checkbox" id="illness1" name="illnesses" value="Diabetes">
+        <label for="illness1">Diabetes</label><br>
+        <input type="checkbox" id="illness2" name="illnesses" value="Asthma">
+        <label for="illness2">Asthma</label><br>
+        <input type="checkbox" id="illness3" name="illnesses" value="Hypertension">
+        <label for="illness3">Hypertension</label><br>
+        <input type="checkbox" id="illness4" name="illnesses" value="Cancer">
+        <label for="illness4">Cancer</label><br><br>
+
+        <!-- Notes (Text Area) -->
+        <label for="notes">Notes:</label><br>
+        <textarea id="notes" name="notes" rows="4" cols="50"></textarea><br><br>
+
+        <!-- Submit Button -->
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
